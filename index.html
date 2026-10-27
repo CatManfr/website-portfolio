@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noé Fournier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="header__logo" href="#top">Noé FOURNIER</a>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a class="header__link" href="#about">À propos de moi</a>
+      <a class="header__link" href="#projects">Mes travaux</a>
+      <a class="header__link" href="#contact">Coordonnées et formulaire de contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Diaporama des projets -->
+    <section class="slideshow" aria-roledescription="carousel" aria-label="Aperçu de mes projets">
+      <div class="slideshow__frame">
+        <div class="slideshow__slide is-active" style="--slide-image: url('images/slideshow/board-game.jpg')">
+          <img src="images/slideshow/board-game.jpg" alt="Plateau du jeu TEN’NO sur Tabletopia" draggable="false">
+        </div>
+        <div class="slideshow__slide" style="--slide-image: url('images/slideshow/mecha-lego.jpg')">
+          <img src="images/slideshow/mecha-lego.jpg" alt="Mecha en lego modélisé sur Blender" draggable="false">
+        </div>
+        <div class="slideshow__slide" style="--slide-image: url('images/slideshow/digital-creation-front.jpg')">
+          <img src="images/slideshow/digital-creation-front.jpg" alt="Création digitale : identité visuelle d’Elise Marot, artisan vitrailler" draggable="false">
+          <img src="images/slideshow/digital-creation-back.jpg" alt="Création digitale : présentation de l’activité d’Elise Marot" draggable="false">
+        </div>
+        <div class="slideshow__slide" style="--slide-image: url('images/slideshow/photo-project.jpg')">
+          <img src="images/slideshow/photo-project.jpg" alt="Projet photo" draggable="false">
+        </div>
+
+        <button class="slideshow__arrow slideshow__arrow--prev" id="previousSlideButton" type="button" aria-label="Image précédente"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="slideshow__arrow slideshow__arrow--next" id="nextSlideButton" type="button" aria-label="Image suivante"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+
+        <div class="slideshow__dots">
+          <button class="slideshow__dot is-active" type="button" aria-label="Aller à l’image 1"></button>
+          <button class="slideshow__dot" type="button" aria-label="Aller à l’image 2"></button>
+          <button class="slideshow__dot" type="button" aria-label="Aller à l’image 3"></button>
+          <button class="slideshow__dot" type="button" aria-label="Aller à l’image 4"></button>
+        </div>
+
+        <a class="slideshow__more-link" href="#projects">En savoir plus</a>
+      </div>
+    </section>
+
+    <!-- À propos de moi -->
+    <section class="about">
+      <h2 class="section-title" id="about">À propos de moi</h2>
+      <p class="about__text">Je suis Noé FOURNIER, un élève de 1ère année à l’IIM de Nantes. Ce site me sert à présenter mes différents projets, qui seront réalisés au fil des années à venir, afin de montrer mon travail.</p>
+    </section>
+
+    <!-- Mes travaux -->
+    <section class="projects">
+      <h1 class="section-title" id="projects">Mes travaux</h1>
+      <div class="projects__grid">
+        <div class="project-card">
+          <img src="images/projects/board-game.jpg" alt="Projet 1">
+          <h3 class="project-card__title">Création d'un jeu</h3>
+          <div class="project-card__info">
+            <span class="project-card__tag">Jeu de plateau</span>
+            <p>Conception d'un jeu de plateau</p>
+          </div>
+          <span class="project-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+        <div class="project-card">
+          <img src="images/projects/mecha-lego.jpg" alt="Projet 2">
+          <h3 class="project-card__title">Mecha lego</h3>
+          <div class="project-card__info">
+            <span class="project-card__tag">3D Blender</span>
+            <p>Création d'un mecha en lego sur Blender</p>
+          </div>
+          <span class="project-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+        <div class="project-card">
+          <img src="images/projects/digital-creation.jpg" alt="Projet 3">
+          <h3 class="project-card__title">Création digitale</h3>
+          <div class="project-card__info">
+            <span class="project-card__tag">Suite Adobe</span>
+            <p>Réalisation d'éléments pour une entreprise fictive</p>
+          </div>
+          <span class="project-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+        <div class="project-card">
+          <img src="images/projects/photo-project.jpg" alt="Projet 4">
+          <h3 class="project-card__title">Projet photo</h3>
+          <div class="project-card__info">
+            <span class="project-card__tag">Photographie</span>
+            <p>Prise de photos sur un thème au choix</p>
+          </div>
+          <span class="project-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <h2 class="footer__title">Plus d’infos et coordonnées</h2>
+    <div class="footer__columns">
+      <div>
+        <h3>Sites</h3>
+        <p><a href="#" target="_blank" rel="noopener">LinkedIn : #####</a></p>
+        <p><a href="#" target="_blank" rel="noopener">Instagram : #####</a></p>
+      </div>
+      <div>
+        <h3>Coordonnées</h3>
+        <p><a href="tel:#####">Téléphone : #####</a></p>
+        <p><a href="mailto:#####">Mail : #####</a></p>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <h2 class="footer__title">Formulaire de contact</h2>
+
+      <div class="contact-form__row">
+        <div class="contact-form__field">
+          <label for="lastname">Nom</label>
+          <input type="text" id="lastname" name="lastname" autocomplete="family-name" placeholder="Votre nom" required aria-describedby="lastname-error">
+          <div class="contact-form__error" id="lastname-error" role="alert"></div>
+        </div>
+        <div class="contact-form__field">
+          <label for="firstname">Prénom</label>
+          <input type="text" id="firstname" name="firstname" autocomplete="given-name" placeholder="Votre prénom" required aria-describedby="firstname-error">
+          <div class="contact-form__error" id="firstname-error" role="alert"></div>
+        </div>
+      </div>
+
+      <div class="contact-form__field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="votre.email@exemple.com" required aria-describedby="email-error">
+        <div class="contact-form__error" id="email-error" role="alert"></div>
+      </div>
+
+      <div class="contact-form__field">
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="01 23 45 67 89" required aria-describedby="phone-error">
+        <div class="contact-form__error" id="phone-error" role="alert"></div>
+      </div>
+
+      <div class="contact-form__field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message" required aria-describedby="message-error"></textarea>
+        <div class="contact-form__error" id="message-error" role="alert"></div>
+      </div>
+
+      <button class="contact-form__submit" type="submit">Envoyer</button>
+      <div class="contact-form__status" id="formStatus" role="status" aria-live="polite"></div>
+    </form>
+
+    <p class="footer__copyright">© 2026 Noé FOURNIER</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
